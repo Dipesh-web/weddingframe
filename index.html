@@ -3,82 +3,125 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dipesh Rathod - Wedding Frame Photography</title>
+  <title>Wedding Frame Photography | Dipesh Rathod</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@300;500&display=swap" rel="stylesheet">
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
+      font-family: 'Raleway', sans-serif;
+      background: #fff;
       color: #333;
-      line-height: 1.6;
+      scroll-behavior: smooth;
     }
     header {
-      background: #000;
-      color: #fff;
-      padding: 20px;
+      height: 100vh;
+      background: url('https://via.placeholder.com/1400x800.png?text=Hero+Image') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
+      flex-direction: column;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      color: #000;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      letter-spacing: 2px;
     }
     section {
-      padding: 20px;
-      max-width: 800px;
+      padding: 60px 20px;
+      max-width: 1000px;
       margin: auto;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-out;
+    }
+    section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
     }
     .gallery img {
       width: 100%;
-      max-width: 250px;
-      margin: 10px;
       border-radius: 10px;
     }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+    .center {
+      text-align: center;
     }
     .btn {
-      display: inline-block;
       padding: 10px 20px;
       background: #000;
       color: #fff;
-      text-decoration: none;
       border-radius: 5px;
-      margin-top: 10px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
     }
     footer {
-      background: #000;
-      color: #fff;
       text-align: center;
-      padding: 10px;
-      margin-top: 40px;
+      padding: 30px;
+      background: #f2f2f2;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Dipesh Rathod</h1>
-    <p>Creative Wedding Photographer | Mumbai</p>
-  </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>I’m a passionate wedding photographer, capturing the magic of Hindu, Sikh, and destination weddings. I specialize in candid, cinematic, drone, and traditional wedding shoots with emotion and creativity.</p>
-  </section>
+<header>
+  <h1>Wedding Frame Photography</h1>
+  <p>by Dipesh Rathod</p>
+</header>
 
-  <section class="gallery">
-    <h2 style="width: 100%; text-align: center;">Sample Gallery</h2>
-    <img src="https://via.placeholder.com/250x180.png?text=Photo+1" alt="Photo 1" />
-    <img src="https://via.placeholder.com/250x180.png?text=Photo+2" alt="Photo 2" />
-    <img src="https://via.placeholder.com/250x180.png?text=Photo+3" alt="Photo 3" />
-  </section>
+<section id="about">
+  <h2 class="center">About Me</h2>
+  <p class="center">I’m Dipesh, a passionate wedding photographer from Mumbai. I specialize in candid, cinematic, drone, and traditional wedding shoots. I capture emotion, tradition, and timeless moments.</p>
+</section>
 
-  <section>
-    <h2>Contact Me</h2>
-    <p>Phone: 9619259892<br />
-    Email: deepv90946@gmail.com</p>
-    <a class="btn" href="https://instagram.com/weddingframe_photography" target="_blank">Follow on Instagram</a>
-  </section>
+<section id="gallery">
+  <h2 class="center">Gallery</h2>
+  <div class="gallery">
+    <img src="https://via.placeholder.com/400x300?text=Wedding+1" alt="Wedding 1" />
+    <img src="https://via.placeholder.com/400x300?text=Wedding+2" alt="Wedding 2" />
+    <img src="https://via.placeholder.com/400x300?text=Wedding+3" alt="Wedding 3" />
+    <img src="https://via.placeholder.com/400x300?text=Wedding+4" alt="Wedding 4" />
+    <img src="https://via.placeholder.com/400x300?text=Wedding+5" alt="Wedding 5" />
+    <img src="https://via.placeholder.com/400x300?text=Wedding+6" alt="Wedding 6" />
+  </div>
+</section>
 
-  <footer>
-    &copy; 2025 Dipesh Rathod | Wedding Frame Photography
-  </footer>
+<section id="contact">
+  <h2 class="center">Contact</h2>
+  <p class="center">Call or WhatsApp: <strong>9619259892</strong><br>Email: weddingframephotography1994@gmail.com</p>
+  <div class="center">
+    <a class="btn" href="https://wa.me/919619259892" target="_blank">📲 Message on WhatsApp</a><br><br>
+    <a class="btn" href="https://instagram.com/weddingframe_photography" target="_blank">📸 Follow on Instagram</a>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Dipesh Rathod | Wedding Frame Photography
+</footer>
+
+<script>
+  const sections = document.querySelectorAll('section');
+  const showOnScroll = () => {
+    const triggerBottom = window.innerHeight * 0.9;
+    sections.forEach(sec => {
+      const top = sec.getBoundingClientRect().top;
+      if (top < triggerBottom) sec.classList.add('show');
+    });
+  };
+  window.addEventListener('scroll', showOnScroll);
+  window.addEventListener('load', showOnScroll);
+</script>
+
 </body>
 </html>
