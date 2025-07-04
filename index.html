@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wedding Frame Photography </title>
+  <title>Wedding Frame Photography | Dipesh Rathod</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@300;500&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -71,9 +71,46 @@
       background: #f2f2f2;
       font-size: 0.9rem;
     }
+    .testimonial {
+      font-style: italic;
+      margin: 20px 0;
+      border-left: 4px solid #000;
+      padding-left: 16px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    input, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 999;
+    }
   </style>
 </head>
 <body>
+
+<a class="whatsapp-float" href="https://wa.me/919619259892" target="_blank">💬</a>
 
 <header>
   <h1>Wedding Frame Photography</h1>
@@ -82,7 +119,7 @@
 
 <section id="about">
   <h2 class="center">About Me</h2>
-  <p class="center">I’m Dipesh, a passionate wedding photographer from Mumbai. I specialize in capture emotions photos, storytelling photos, create a memorable memoryes, and capturing both family creat a new beging couple of love or blessing in the wedding.</p>
+  <p class="center">I’m Dipesh, a passionate wedding photographer from Mumbai. I specialize in candid, cinematic, drone, and traditional wedding shoots. I capture emotion, tradition, and timeless moments.</p>
 </section>
 
 <section id="gallery">
@@ -97,11 +134,22 @@
   </div>
 </section>
 
+<section id="testimonials">
+  <h2 class="center">Client Testimonials</h2>
+  <div class="testimonial">“Dipesh captured our wedding so beautifully! Thank you!” – Riya & Arjun</div>
+  <div class="testimonial">“Super creative shots. Loved the drone work.” – Aditi & Kabir</div>
+  <div class="testimonial">“Very professional and friendly team.” – Neha Sharma</div>
+</section>
+
 <section id="contact">
-  <h2 class="center">Contact</h2>
-  <p class="center">Call or WhatsApp: <strong>9619259892</strong><br>Email: weddingframephotography1994@gmail.com</p>
+  <h2 class="center">Book a Shoot</h2>
+  <form action="https://formsubmit.co/weddingframephotography1994@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message or Wedding Date" required></textarea>
+    <button class="btn" type="submit">Send</button>
+  </form>
   <div class="center">
-    <a class="btn" href="https://wa.me/919619259892" target="_blank">📲 Message on WhatsApp</a><br><br>
     <a class="btn" href="https://instagram.com/weddingframe_photography" target="_blank">📸 Follow on Instagram</a>
   </div>
 </section>
