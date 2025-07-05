@@ -81,14 +81,12 @@
       flex-direction: column;
       gap: 15px;
     }
-    <form action="https://formspree.io/f/mdkzvkqk" method="POST">
-  <input type="text" name="name" placeholder="Full Name" required />
-  <input type="email" name="email" placeholder="Email Address" required />
-  <input type="text" name="event" placeholder="Event Date & City" required />
-  <textarea name="message" rows="4" placeholder="Tell us more..." required></textarea>
-  <button type="submit">Send Inquiry</button>
-</form>
-
+    form input, form textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
     form button {
       padding: 12px;
       background: #000;
@@ -127,11 +125,12 @@
 
 <header>
   <video autoplay muted loop>
-    <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4
+    <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+  </video>
   <div class="overlay"></div>
   <div class="text">
     <h1>Wedding Frame Photography</h1>
-    <p>Dipesh Rathod</p>
+    <p> Dipesh Rathod</p>
   </div>
 </header>
 
