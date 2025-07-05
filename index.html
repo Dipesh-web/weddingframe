@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,71 +24,10 @@
                 </select>
             </div>
         </div>
-        <div id="photographerList" class="row g-4"></
-const photographers = [
-    {
-        name: "Lens Queen Studio",
-        location: "Mumbai",
-        price: "₹50,000",
-        rating: 4.5,
-        image: "./assets/img/photo1.jpg"
-    },
-    {
-        name: "Dreamy Captures",
-        location: "Delhi",
-        price: "₹35,000",
-        rating: 4.8,
-        image: "./assets/img/photo2.jpg"
-    },
-    {
-        name: "Wedding Tales",
-        location: "Bangalore",
-        price: "₹45,000",
-        rating: 4.2,
-        image: "./assets/img/photo3.jpg"
-    }
-];
-const listContainer = document.getElementById("photographerList");
-const searchInput = document.getElementById("search");
-const locationFilter = document.getElementById("locationFilter");
+        <div id="photographerList" class="row g-4"></div>
+    </div>
 
-function renderPhotographers(data) {
-    listContainer.innerHTML = "";
-    data.forEach(p => {
-        const card = document.createElement("div");
-        card.className = "col-md-4";
-        card.innerHTML = `
-            <div class="card h-100">
-                <img src="${p.image}" class="card-img-top" alt="${p.name}">
-                <div class="card-body">
-                    <h5 class="card-title">${p.name}</h5>
-                    <p class="card-text">${p.location} | ${p.price}</p>
-                    <p class="card-text">⭐ ${p.rating}</p>
-                </div>
-            </div>`;
-        listContainer.appendChild(card);
-    });
-}
-
-function filterData() {
-    const query = searchInput.value.toLowerCase();
-    const location = locationFilter.value;
-    const filtered = photographers.filter(p => {
-        const matchesQuery = p.name.toLowerCase().includes(query) || p.location.toLowerCase().includes(query);
-        const matchesLocation = location ? p.location === location : true;
-        return matchesQuery && matchesLocation;
-    });
-    renderPhotographers(filtered);
-}
-
-searchInput.addEventListener("input", filterData);
-locationFilter.addEventListener("change", filterData);
-
-renderPhotographers(photographers);
-.card img {
-    height: 200px;
-    object-fit: cover;
-}
-assets/img/photo1.jpg
-assets/img/photo2.jpg
-assets/img/photo3.jpg
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
