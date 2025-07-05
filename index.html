@@ -2,69 +2,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Wedding Frame Photography</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 </head>
 <body>
 
-  <header>
-    <div class="logo">Wedding Frame Photography</div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#inquire">Inquire</a>
-    </nav>
-  </header>
+<header>
+  <div class="logo">Wedding Frame Photography</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#inquire">Inquire</a>
+  </nav>
+</header>
 
-  <section id="home" class="slideshow">
-    <img src="images/sample1.jpg" class="slide active">
-    <img src="images/sample2.jpg" class="slide">
-    <img src="images/sample3.jpg" class="slide">
-  </section>
+<section id="home" class="slideshow">
+  <img src="images/sample1.jpg" class="slide active">
+  <img src="images/sample2.jpg" class="slide">
+  <img src="images/sample3.jpg" class="slide">
+</section>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>Capturing real emotions, timeless moments, and the blessings of parents. Wedding Frame Photography brings soul to every frame.</p>
-  </section>
+<section id="about">
+  <h2>About</h2>
+  <p>We capture timeless wedding moments with elegance and emotion. Based in Mumbai, Wedding Frame Photography specializes in candid, cinematic, and traditional photography.</p>
+</section>
 
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <img src="images/sample1.jpg" alt="Wedding Image 1">
-      <img src="images/sample2.jpg" alt="Wedding Image 2">
-      <img src="images/sample3.jpg" alt="Wedding Image 3">
-    </div>
-  </section>
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+    <a href="images/sample1.jpg" class="glightbox"><img src="images/sample1.jpg" alt="Wedding 1" /></a>
+    <a href="images/sample2.jpg" class="glightbox"><img src="images/sample2.jpg" alt="Wedding 2" /></a>
+    <a href="images/sample3.jpg" class="glightbox"><img src="images/sample3.jpg" alt="Wedding 3" /></a>
+  </div>
+</section>
 
-  <section id="inquire">
-    <h2>Inquire</h2>
-    <form action="https://formspree.io/f/mzzgqzlv" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+<section id="inquire">
+  <h2>Inquire</h2>
+  <form action="https://formspree.io/f/mzzgqzlv" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
 
-  <footer>
-    <a href="https://instagram.com/weddingframe_photography" target="_blank">Instagram</a> |
-    <a href="https://wa.me/919619259892" target="_blank">WhatsApp</a> |
-    <a href="mailto:deepv9094@gmail.com">Email</a>
-  </footer>
-
-<!-- Lightbox and slideshow scripts -->
-<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-<script src="js/script.js"></script>
-<script>
-  const lightbox = GLightbox({ selector: '.glightbox' });
-</script>
-
-
-  <footer>
+<footer>
   <a href="https://instagram.com/weddingframe_photography" target="_blank">📸</a>
   <a href="https://wa.me/919619259892" target="_blank">💬</a>
   <a href="mailto:deepv9094@gmail.com">✉️</a>
@@ -76,9 +62,6 @@
 <script>
   const lightbox = GLightbox({ selector: '.glightbox' });
 </script>
-</body>
-</html>
 
-  
 </body>
 </html>
