@@ -1,212 +1,91 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dipesh Rathod | Premium Wedding Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@300;500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wedding Frame Photography</title>
   <style>
-    .responsive-iframe-container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 100%;
-}
-
-.responsive-iframe-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'Raleway', sans-serif;
-      background: #fdf7f0;
-      color: #3e2f1c;
-      scroll-behavior: smooth;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff;
+      color: #333;
     }
+
     header {
-      height: 100vh;
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .about {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .gallery-title {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .image-gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .insta-section {
+      text-align: center;
+      padding: 30px 10px;
+      background: #f9f9f9;
+    }
+
+    .responsive-iframe-container {
       position: relative;
       overflow: hidden;
+      width: 300px;
+      height: 300px;
+      margin: 10px;
+      display: inline-block;
     }
-    header video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+
+    .responsive-iframe-container iframe {
       position: absolute;
       top: 0;
       left: 0;
-      z-index: -1;
-    }
-    header .overlay {
-      background: rgba(80,60,40,0.4);
+      width: 100%;
       height: 100%;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-    header .text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      color: #fff;
-    }
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-      letter-spacing: 2px;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      text-align: center;
-      margin-bottom: 30px;
-      position: relative;
-      padding-bottom: 10px;
-    }
-    h2::after {
-      content: "";
-      width: 60px;
-      height: 3px;
-      background: #e9c9a3;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      border-radius: 2px;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    .testimonial {
-      background: #f9f9f9;
-      padding: 20px;
-      border-radius: 8px;
-      margin-bottom: 20px;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-    form input, form textarea {
-      padding: 10px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      font-size: 1rem;
-    }
-    form button {
-      padding: 12px;
-      background: #b08968;
-      color: #fff;
       border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-      cursor: pointer;
     }
-    form button:hover {
-      background: #a67c52;
-    }
+
     footer {
-      background: #3e2f1c;
-      color: #fff;
       text-align: center;
-      padding: 30px;
-      font-size: 0.9rem;
-    }
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25D366;
+      padding: 20px;
+      background: #111;
       color: white;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 24px;
-      text-decoration: none;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      z-index: 999;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <video autoplay muted loop>
-    <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
-  </video>
-  <div class="overlay"></div>
-  <div class="text">
-    <h1>Wedding Frame Photography</h1>
-    <p>Dipesh Rathod</p>
-  </div>
-</header>
-
-<section id="about">
-  <h2>About Me</h2>
-  <p style="text-align:center;">I’m Dipesh, a passionate wedding photographer from Mumbai. I capture the beauty of destination weddings through cinematic, candid, and traditional styles. With emotion in every frame, I create timeless memories.</p>
-</section>
-
-<section id="gallery">
-  <h2>Gallery</h2>
-  <div class="gallery">
-    <img src="https://via.placeholder.com/400x300?text=Shot+1" />
-    <img src="https://via.placeholder.com/400x300?text=Shot+2" />
-    <img src="https://via.placeholder.com/400x300?text=Shot+3" />
-    <img src="https://via.placeholder.com/400x300?text=Shot+4" />
-  </div>
-</section>
-
-<section id="testimonials">
-  <h2>Client Testimonials</h2>
-  <div class="testimonial">“Dipesh and his team captured our day beautifully! Every picture brings a smile.” </div>
-  <div class="testimonial">“Highly recommend Wedding Frame Photography! They made us feel comfortable.” </div>
-  <div class="testimonial">“Loved the candid moments. Thank you for making our memories eternal.” </div>
-</section>
-
-<section id="contact">
-  <h2>Book a Shoot</h2>
-  <form action="https://formspree.io/f/xqabjrre" method="POST">
-    <input type="text" name="name" placeholder="Full Name" required />
-    <input type="email" name="_replyto" placeholder="Email Address" required />
-    <input type="text" name="event_date" placeholder="Event Date & City" required />
-    <textarea name="message" rows="4" placeholder="Tell us more..." required></textarea>
-    <button type="submit">Send Inquiry</button>
-  </form>
-</section>
-
-<footer>
-  <p>&copy; 2025 Dipesh Rathod | Wedding Frame Photography<br>
-  Email: weddingframephotography1994@gmail.com</p>
-</footer>
-
-<a class="whatsapp-float" href="https://wa.me/919619259892" target="_blank">💬</a>
-
-</body>
-</html>
+  <header>
+    <h1>Wedding Frame Photogrpher
