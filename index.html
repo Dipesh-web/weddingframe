@@ -58,38 +58,61 @@
   <h2>Wedding Photo</h2>
   <img src="media/bride.jpg" alt="Bride Photo">
 
-  <h2>Bride Gallery</h2>
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
-  <img src="media/bride1.jpg" width="200">
-  <img src="media/bride2.jpg" width="200">
-  <img src="media/bride3.jpg" width="200">
-  <img src="media/bride4.jpg" width="200">
-  <img src="media/bride5.jpg" width="200">
-  <img src="media/bride6.jpg" width="200">
-  <img src="media/bride7.jpg" width="200">
-  <img src="media/bride8.jpg" width="200">
-  <img src="media/bride9.jpg" width="200">
-  <img src="media/bride10.jpg" width="200">
-  <img src="media/bride11.jpg" width="200">
-  <img src="media/bride12.jpg" width="200">
-  <img src="media/bride13.jpg" width="200">
-  <img src="media/bride14.jpg" width="200">
-  <img src="media/bride15.jpg" width="200">
- <img src="media/bride16.jpg" width="200">
- <img src="media/bride17.jpg" width="200">
- <img src="media/bride18.jpg" width="200">
- <img src="media/bride19.jpg" width="200">
- <img src="media/bride20.jpg" width="200">
- <img src="media/bride21.jpg" width="200">
- <img src="media/bride22.jpg" width="200">
- <img src="media/bride23.jpg" width="200">
- <img src="media/bride24.jpg" width="200">
- <img src="media/bride25.jpg" width="200">
- <img src="media/bride26.jpg" width="200">
- <img src="media/bride27.jpg" width="200">
- <img src="media/bride28.jpg" width="200">
- <img src="media/bride29.jpg" width="200">
- <img src="media/bride30.jpg" width="200">
+<h2 style="margin-top: 40px;">Bride Gallery</h2>
+<div style="
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  padding: 10px;
+  max-width: 1200px;
+  margin: auto;
+">
+  <img src="media/bride1.jpg" class="gallery-img">
+  <img src="media/bride2.jpg" class="gallery-img">
+  <img src="media/bride3.jpg" class="gallery-img">
+  <img src="media/bride4.jpg" class="gallery-img">
+  <img src="media/bride5.jpg" class="gallery-img">
+  <img src="media/bride6.jpg" class="gallery-img">
+  <img src="media/bride7.jpg" class="gallery-img">
+  <img src="media/bride8.jpg" class="gallery-img">
+  <img src="media/bride9.jpg" class="gallery-img">
+  <img src="media/bride10.jpg" class="gallery-img">
+  <img src="media/bride11.jpg" class="gallery-img">
+  <img src="media/bride12.jpg" class="gallery-img">
+  <img src="media/bride13.jpg" class="gallery-img">
+  <img src="media/bride14.jpg" class="gallery-img">
+  <img src="media/bride15.jpg" class="gallery-img">
+  <img src="media/bride16.jpg" class="gallery-img">
+  <img src="media/bride17.jpg" class="gallery-img">
+  <img src="media/bride18.jpg" class="gallery-img">
+  <img src="media/bride19.jpg" class="gallery-img">
+  <img src="media/bride20.jpg" class="gallery-img">
+  <img src="media/bride21.jpg" class="gallery-img">
+  <img src="media/bride22.jpg" class="gallery-img">
+  <img src="media/bride23.jpg" class="gallery-img">
+  <img src="media/bride24.jpg" class="gallery-img">
+  <img src="media/bride25.jpg" class="gallery-img">
+  <img src="media/bride26.jpg" class="gallery-img">
+  <img src="media/bride27.jpg" class="gallery-img">
+  <img src="media/bride28.jpg" class="gallery-img">
+  <img src="media/bride29.jpg" class="gallery-img">
+  <img src="media/bride30.jpg" class="gallery-img">
+</div>
+
+<style>
+  .gallery-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+  .gallery-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 16px rgba(0,0,0,0.3);
+  }
+</style>
+
 
   
 </div>
