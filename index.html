@@ -1,191 +1,76 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dipesh Rathod | Premium Wedding Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@300;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>WeddingFrame</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'Raleway', sans-serif;
-      background: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
       color: #333;
-      scroll-behavior: smooth;
-    }
-    header {
-      height: 100vh;
-      position: relative;
-      overflow: hidden;
-    }
-    header video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }
-    header .overlay {
-      background: rgba(0,0,0,0.4);
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-    header .text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      color: #fff;
-    }
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-      letter-spacing: 2px;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      text-align: center;
       margin-bottom: 30px;
     }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-    .gallery img {
-      width: 100%;
+    img, video {
+      max-width: 90%%;
+      margin: 20px auto;
+      display: block;
       border-radius: 10px;
-    }
-    .testimonial {
-      background: #f9f9f9;
-      padding: 20px;
-      border-radius: 8px;
-      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
     form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
+      max-width: 500px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
-    form input, form textarea {
+    input, textarea, button {
+      width: 100%%;
+      margin: 10px 0;
       padding: 10px;
-      border-radius: 5px;
+      font-size: 16px;
+      border-radius: 4px;
       border: 1px solid #ccc;
-      font-size: 1rem;
     }
-    form button {
-      padding: 12px;
-      background: #000;
-      color: #fff;
+    button {
+      background-color: #007bff;
+      color: white;
       border: none;
-      border-radius: 5px;
-      font-size: 1rem;
       cursor: pointer;
     }
-    footer {
-      background: #000;
-      color: #fff;
-      text-align: center;
-      padding: 30px;
-      font-size: 0.9rem;
-    }
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25D366;
-      color: white;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 24px;
-      text-decoration: none;
-      z-index: 999;
+    button:hover {
+      background-color: #0056b3;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <video autoplay muted loop>
-    <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+  <h1>Welcome to WeddingFrame</h1>
+
+  <h2>Wedding Photo</h2>
+  <img src="media/bride.jpg" alt="Bride Photo">
+
+  <h2>Wedding Trailer</h2>
+  <video controls>
+    <source src="media/wedding.mp4" type="video/mp4">
+    Your browser does not support the video tag.
   </video>
-  <div class="overlay"></div>
-  <div class="text">
-    <h1>Wedding Frame Photography</h1>
-    <p> Dipesh Rathod</p>
-  </div>
-</header>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p style="text-align:center;">I’m Dipesh, a passionate wedding photographer from Mumbai. I capture the beauty of Hindu, Sikh, and destination weddings through cinematic, candid, and traditional styles. With emotion in every frame, I create timeless memories.</p>
-</section>
-
-<section id="testimonials">
-  <h2>Client Testimonials</h2>
-  <div class="testimonial">“Dipesh and his team captured our day beautifully! Every picture brings a smile.”</div>
-  <div class="testimonial">“Highly recommend Wedding Frame Photography! They made us feel comfortable.”</div>
-  <div class="testimonial">“Loved the candid moments. Thank you for making our memories eternal.”</div>
-</section>
-
-<section id="contact">
-  <h2>Book a Shoot</h2>
-  <form>
-    <input type="text" placeholder="Full Name" required />
-    <input type="email" placeholder="Email Address" required />
-    <input type="text" placeholder="Event Date & City" required />
-    <textarea rows="4" placeholder="Tell us more..." required></textarea>
-    <button type="submit">Send Inquiry</button>
+  <h2>Contact Us</h2>
+  <form action="https://formspree.io/f/your-form-id" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+    <button type="submit">Send Message</button>
   </form>
-</section>
-
-<footer>
-  <p>&copy; 2025 Dipesh Rathod | Wedding Frame Photography<br>
-  Email: weddingframephotography1994@gmail.com | Instagram: @weddingframe_photography</p>
-</footer>
-
-<a class="whatsapp-float" href="https://wa.me/919619259892" target="_blank">💬</a>
-
-  <section>
-  <h2 class="gallery-title">📸 Photo Gallery</h2>
-  <div class="image-gallery">
-    <img src="images/photo1.jpg" alt="Wedding Image 1" />
-    <img src="images/photo2.jpg" alt="Wedding Image 2" />
-    <img src="images/photo3.jpg" alt="Wedding Image 3" />
-    <img src="images/photo4.jpg" alt="Wedding Image 4" />
-    <img src="images/photo5.jpg" alt="Wedding Image 5" />
-    <img src="images/photo6.jpg" alt="Wedding Image 6" />
-    <img src="images/photo7.jpg" alt="Wedding Image 7" />
-    <img src="images/photo8.jpg" alt="Wedding Image 8" />
-    <img src="images/photo9.jpg" alt="Wedding Image 9" />
-    <img src="images/photo10.jpg" alt="Wedding Image 10" />
-    <img src="images/photo11.jpg" alt="Wedding Image 11" />
-    <img src="images/photo12.jpg" alt="Wedding Image 12" />
-    <img src="images/photo13.jpg" alt="Wedding Image 13" />
-    <img src="images/photo14.jpg" alt="Wedding Image 14" />
-    <img src="images/photo15.jpg" alt="Wedding Image 15" />
-    
-  </div>
-</section>
 
 </body>
 </html>
