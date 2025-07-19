@@ -534,19 +534,38 @@
     });
   });
 </script>
-
+<!-- 🔈 Background Music -->
 <audio id="bg-music" autoplay loop>
   <source src="assets/romantic-music.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 
+<!-- 🔇 Mute/Unmute Button -->
 <button id="mute-btn">🔊</button>
 
+<!-- 🎨 Mute Button Styling -->
+<style>
+  #mute-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* ✅ This shifts it to the left */
+    z-index: 1000;
+    font-size: 24px;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+</style>
+
+<!-- 🧠 Mute Button Logic -->
 <script>
   const audio = document.getElementById("bg-music");
   const btn = document.getElementById("mute-btn");
 
-  // Attempt to play music after user interaction (for autoplay restrictions)
+  // Allow audio to play after first user click (mobile autoplay restriction)
   window.addEventListener("DOMContentLoaded", () => {
     const playMusic = () => {
       audio.play().catch(() => {});
@@ -555,6 +574,7 @@
     document.body.addEventListener("click", playMusic);
   });
 
+  // Toggle mute on click
   btn.addEventListener("click", () => {
     if (audio.muted) {
       audio.muted = false;
@@ -565,6 +585,7 @@
     }
   });
 </script>
+
 
 <style>
   #mute-btn {
