@@ -492,8 +492,6 @@
     box-shadow: 0 10px 16px rgba(0,0,0,0.3);
   }
 </style>
-
-
   
 </div>
   
@@ -646,6 +644,44 @@
     
     <label>Email:</label><br>
     <input type="email" na
+
+      <!-- ✍️ Client Review Form with Rating & Photo -->
+<section id="review-form" style="background:#fffbe9; padding: 50px 20px; text-align:center;">
+  <h2 style="font-size: 28px; color: #b67c5a;">Share Your Experience</h2>
+  <p style="color: #555;">We’d love to hear your feedback!</p>
+
+  <form action="https://formspree.io/f/xkgbdnpq" method="POST" enctype="multipart/form-data" style="max-width: 500px; margin: 20px auto; text-align: left;">
+    
+    <!-- Name -->
+    <label>Name:</label><br>
+    <input type="text" name="name" required style="width: 100%; padding: 10px; margin-bottom: 10px;"><br>
+
+    <!-- Email -->
+    <label>Email:</label><br>
+    <input type="email" name="_replyto" required style="width: 100%; padding: 10px; margin-bottom: 10px;"><br>
+
+    <!-- Review -->
+    <label>Your Review:</label><br>
+    <textarea name="message" rows="5" required style="width: 100%; padding: 10px;"></textarea><br>
+
+    <!-- ⭐ Star Rating -->
+    <label style="margin-top: 10px;">Your Rating:</label><br>
+    <div class="star-rating" style="font-size: 24px; margin-bottom: 15px;">
+      <input type="radio" name="rating" value="5" id="5"><label for="5">⭐</label>
+      <input type="radio" name="rating" value="4" id="4"><label for="4">⭐</label>
+      <input type="radio" name="rating" value="3" id="3"><label for="3">⭐</label>
+      <input type="radio" name="rating" value="2" id="2"><label for="2">⭐</label>
+      <input type="radio" name="rating" value="1" id="1"><label for="1">⭐</label>
+    </div>
+
+    <!-- 📸 Photo Upload -->
+    <label>Upload Photo (optional):</label><br>
+    <input type="file" name="photo" accept="image/*" style="margin-bottom: 15px;"><br>
+
+    <!-- Submit -->
+    <button type="submit" style="margin-top: 15px; padding: 10px 20px; background:#b67c5a; color:white; border:none; border-radius: 5px;">Submit Review</button>
+  </form>
+</section>
 
 
 <!-- 🌟 TESTIMONIALS SECTION -->
