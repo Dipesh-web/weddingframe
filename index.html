@@ -73,14 +73,14 @@
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-  <script>
-    AOS.init();
-    const slides = document.querySelectorAll(\".slide\");
-    let current = 0;
-    setInterval(() => {
-      slides[current].classList.remove(\"active\");
-      current = (current + 1) % slides.length;
-      slides[current].classList.add(\"active\");
-    }, 4000);
-  </script>
+<script>
+  AOS.init();
+  const slides = document.querySelectorAll(\".slide\");
+  let current = 0;
+  setInterval(() => {
+    slides[current].classList.remove(\"active\");
+    current = (current + 1) % slides.length;
+    slides[current].classList.add(\"active\");
+  }, 4000);
+</script>
 </body>
