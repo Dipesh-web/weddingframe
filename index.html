@@ -1,18 +1,29 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wedding Frame</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- ✅ Lightbox CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+</head>
 <body>
   <!-- Navigation -->
-  <nav class="navbar">
-    <div class="container">
-      <div class="logo">Wedding Frame</div>
-      <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#gallery">Photos</a></li>
-        <li><a href="#films">Films</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+<nav class="navbar">
+  <div class="container">
+    <div class="logo">Wedding Frame</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#gallery">Photos</a></li>
+      <li><a href="#films">Films</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
   <!-- Hero Section -->
   <header id="hero" class="hero-section">
@@ -91,16 +102,22 @@
     current = (current + 1) % slides.length;
     slides[current].classList.add("active");
   }, 4000);
+
+  // 🔧 Toggle mobile menu
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("show");
+  }
 </script>
-</body>
-</html>
 
 <style>
-  .hero-slider {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-  }
+  * {
+  box-sizing: border-box;
+}
+
+  .hero-section {
+  position: relative;
+  height: 100vh;
+}
 
   .slide {
     position: absolute;
@@ -140,11 +157,103 @@
     height: 100%;
     display: block;
   }
+
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .navbar .container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background: #fff;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      width: 200px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .nav-links.show {
+      display: flex;
+    }
+
+    .nav-links li {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .menu-toggle {
+      display: block;
+      cursor: pointer;
+    }
+
+    .logo {
+      font-size: 20px;
+    }
+  }
+
+  /* Desktop default */
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+
+  .menu-toggle {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: #000;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #000;
+  }
+  .section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  padding: 0 20px;
+  background-color: rgba(0, 0, 0, 0.4); /* semi-transparent black */
+  border-radius: 10px;
+}
+
+
 </style>
 
 <!-- WhatsApp Button -->
-<a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank">
+<a href="https://wa.me/9619259892" class="whatsapp-float" target="_blank">
   <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp--v1.png" alt="WhatsApp" />
 </a>
 
 </body>
+</html>
