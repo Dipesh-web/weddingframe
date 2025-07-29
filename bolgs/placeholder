@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Kesha & Aditya | Wedding Story</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      padding: 0;
+      background: #fafafa;
+      color: #333;
+    }
+    .story-header {
+      background: url('../assets/images/karishma-varun-cover.jpg') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.7);
+      text-align: center;
+    }
+    .story-header h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+    .story-content {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .story-content p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .video {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .video iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 450px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="story-header">
+    <h1>Karishma & Varun</h1>
+  </div>
+
+  <div class="story-content">
+    <p>Kesha & Aditya’s wedding was a royal celebration filled with elegance, laughter, and love. Captured under the warm Jaipur sun, their moments were nothing short of magic.</p>
+    <p>From the Mehendi dances to the timeless pheras, every frame glowed with emotion and grandeur.</p>
+
+    <div class="gallery">
+      <img src="../assets/images/story1.jpg" alt="Story photo 1">
+      <img src="../assets/images/story2.jpg" alt="Story photo 2">
+      <img src="../assets/images/story3.jpg" alt="Story photo 3">
+      <img src="../assets/images/story4.jpg" alt="Story photo 4">
+    </div>
+
+    <div class="video">
+      <h2>Watch the Wedding Film</h2>
+      <iframe src="https://www.youtube.com/embed/_Co-K68TMXk" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+</body>
+</html>
